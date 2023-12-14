@@ -59,15 +59,6 @@ public class Player : MonoBehaviour
     {
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         Destroy(gameObject);  
-        if(true)
-        {
-            delay -= Time.deltaTime;
-
-            if (delay <= 0)
-            {
-              SwitchScene();
-            }
-        }
     }
     public void Foods()
     {
